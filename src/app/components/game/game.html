@@ -1,0 +1,8 @@
+<div class="game">
+<div *ng-if="!gameOn" (click)="startGame()" class="large-text">
+  Start
+</div>
+<div *ng-if="gameOn" [style.transform]="'rotate(' + rotate +'deg)'" (click)="stopGame()" class="large-text">
+  Taci Dracului Ilie
+</span>
+<div>

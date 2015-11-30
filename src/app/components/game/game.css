@@ -1,0 +1,14 @@
+.game {
+	position: absolute;
+	top:0;
+	left:0;
+	bottom: 0;
+	right:0;
+}
+.game .large-text {
+	text-align: center;
+	font-size: 3em;
+	font-family: cursive;
+	display: block;
+	margin-top:300px;
+}
