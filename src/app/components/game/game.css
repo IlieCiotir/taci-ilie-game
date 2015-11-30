@@ -12,3 +12,9 @@
 	display: block;
 	margin-top:300px;
 }
+
+.game .score {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+}

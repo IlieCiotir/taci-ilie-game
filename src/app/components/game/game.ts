@@ -1,5 +1,5 @@
 import {Component} from 'angular2/angular2';
-
+import {ToScore} from '../../pipes/to-score/to-score';
 
 @Component({
   selector: 'game',
@@ -7,10 +7,10 @@ import {Component} from 'angular2/angular2';
   styleUrls: ['app/components/game/game.css'],
   providers: [],
   directives: [],
-  pipes: []
+  pipes: [ToScore]
 })
 export class Game {
-  private rotate:number=100;
+  private rotate:number = 0;
   private intervalHandle: number;
   private gameOn: boolean = false;
   private stoping: boolean = false;
@@ -33,6 +33,7 @@ export class Game {
       setTimeout(() => {
         clearInterval(this.intervalHandle);
         this.gameOn = false
+        this.rotate = 0;
       }, stopTime);
     }
   }
